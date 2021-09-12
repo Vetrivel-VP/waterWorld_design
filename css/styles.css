@@ -166,8 +166,25 @@ header .menu li:hover:last-child {
 }
 
 @media screen and (max-width: 850px) {
-  header .menu li {
-    display: none;
+  header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
+            box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
   }
 }
 

@@ -127,10 +127,18 @@ header {
                     transition: all 0.3s ease-in-out;
                 }
             }
-
-            @media screen and (max-width: 850px) {
-                display: none;
-            }
+        }
+        @media screen and (max-width: 850px) {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            justify-content: space-evenly;
+            box-shadow: 5px 15px 25px rgba($color: #000000, $alpha: 0.25);
         }
     }
 
